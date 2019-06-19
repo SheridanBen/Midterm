@@ -26,8 +26,16 @@ public class Payroll
                  
         }
          /**The method for calculating salary including bonus.Bonus is 10% of salary 
-      */ 
-        
+      
+    */ 
+    public void Total(double total, double add)
+    {
+        if (total < 3000) {
+            add = total*0.1;
+            total = total+add;
+        }
+        System.out.println("New Salary Amount: " + total);
+    }
         
      /**The getter for the Salary
      * @return the Salary
